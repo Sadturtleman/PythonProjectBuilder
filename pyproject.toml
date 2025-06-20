@@ -2,14 +2,13 @@
 name = "pythonprojectbuilder"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Sadturtleman",email = "rugsn12345@gmail.com"}
-]
+authors = [{ name = "Sadturtleman", email = "rugsn12345@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-]
+dependencies = []
 
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
