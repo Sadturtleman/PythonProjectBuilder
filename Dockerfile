@@ -9,9 +9,9 @@ WORKDIR /app
 # 전체 복사 먼저 (중요!)
 COPY . .
 
-# poetry 가상환경을 프로젝트 내부에 생성 + 설치
+# poetry 가상환경을 프로젝트 내부에 생성 + 설치 (dev 포함)
 RUN poetry config virtualenvs.in-project true \
-    && poetry install --no-interaction --no-ansi
+    && poetry install --no-interaction --no-ansi --with dev
 
 # 기본 실행 명령 (pytest)
 CMD ["poetry", "run", "pytest"]
